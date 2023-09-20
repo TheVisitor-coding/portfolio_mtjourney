@@ -1,10 +1,7 @@
+import { Navbar } from '@/components'
 import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Portfolio MT_Journey',
   description: 'Freelance Web Developer',
 }
@@ -16,7 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/twl5efs.css"/>
+      </head>
+      <body className={"relative overflow-hidden"}>
+          <Navbar />
+          {children}
+        </body>
     </html>
   )
 }

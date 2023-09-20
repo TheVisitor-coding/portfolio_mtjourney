@@ -8,6 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "text-color": "var(--text-color)",
+        "bg-color": "var(--bg-color)",
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)",
+      },
+      borderWidth: {
+        1: '1px',
+      },
+      fontFamily: {
+        'moby': 'var(--font-moby)',
+        'kallisto': 'var(--font-kallisto)',
+      },
     },
   },
   plugins: [],

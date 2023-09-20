@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://use.typekit.net/twl5efs.css');
+
 :root {
   --bg-color : #1E1E1E;
   --primary-color : #6A5AF6;
   --secondary-color : #F9D399;
   --text-color : #FFFAFA;
+  --font-moby : 'moby', sans-serif;
+  --font-kallisto : 'kallisto', sans-serif;
 }
 
 body {
