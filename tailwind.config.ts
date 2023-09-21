@@ -21,6 +21,10 @@ const config: Config = {
         'moby': 'var(--font-moby)',
         'kallisto': 'var(--font-kallisto)',
       },
+      fontSize: {
+        '7xl': '4.4rem',
+        '10xl': '9rem',
+      }
     },
   },
   plugins: [],

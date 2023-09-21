@@ -4,15 +4,49 @@
 
 @import url('https://use.typekit.net/twl5efs.css');
 
+@layer base {
+  .font-outline-2 {
+    /* Fond transparent */
+    -webkit-text-stroke: 3px var(--text-color);
+    opacity: 30%;
+  }
+
+
+
+}
+
 :root {
-  --bg-color : #1E1E1E;
-  --primary-color : #6A5AF6;
-  --secondary-color : #F9D399;
-  --text-color : #FFFAFA;
-  --font-moby : 'moby', sans-serif;
-  --font-kallisto : 'kallisto', sans-serif;
+  --bg-color: #1E1E1E;
+  --primary-color: #6A5AF6;
+  --secondary-color: #F9D399;
+  --text-color: #FFFAFA;
+  --font-moby: 'moby', sans-serif;
+  --font-kallisto: 'kallisto', sans-serif;
 }
 
 body {
   background-color: var(--bg-color);
+}
+
+.anim-text {
+  animation: 5s ease-in-out 1s infinite textfloating;
+}
+
+@keyframes textfloating {
+  50% {
+    transform: translateY(2px);
+    transform: translateX(-30px);
+    rotate: -6deg;
+  }
+}
+
+.gradient-btn {
+  background-image: linear-gradient(to right, var(--secondary-color) 0%, var(--primary-color) 51%, var(--secondary-color) 100%);
+  transition: ease-in-out 0.6s;
+  background-size: 200% auto;
+}
+
+.gradient-btn:hover {
+  background-position: right center;
+  transform: translateY(-5px);
 }

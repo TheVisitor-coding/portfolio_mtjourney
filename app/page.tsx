@@ -1,6 +1,9 @@
+import AccueilSection from "@/components/section/Accueil_Section";
+
 export default function Page() {
   return (
     <main>
-      <h1>Page</h1>
+      <AccueilSection />
     </main>
-  )}
+  )
+}
