@@ -4,9 +4,9 @@ import ButtonPlanet from "../ButtonPlanet";
 
 function Navbar() {
   return (
-    <nav className="flex flex-row justify-between items-center mt-5 mx-16">
+    <nav className="flex flex-row justify-between items-center mt-5 lg:mx-16 mx-5">
       <Image src="/logo_mtjourney.png" alt="MT_Journey Logo" width={63} height={33} className="" />
-      <div className="flex flex-row gap-24 text-text-color font-moby text-xs">
+      <div className="flex flex-row xl:gap-24 lg:gap-14 gap-5 text-text-color font-moby xl:text-xs text-[10px]">
         <a href="#" className="transition-all hover:border-b-2 hover:border-primary-color">//Competences</a>
         <a href="#">//Expertises</a>
         <a href="#">//Process</a>

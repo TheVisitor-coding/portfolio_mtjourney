@@ -14,12 +14,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/twl5efs.css"/>
+        <link rel="stylesheet" href="https://use.typekit.net/twl5efs.css" />
       </head>
-      <body className={"relative overflow-hidden"}>
-          <Navbar />
-          {children}
-        </body>
+      <body className={"overflow-hidden"}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

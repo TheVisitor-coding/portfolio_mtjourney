@@ -23,7 +23,8 @@ const config: Config = {
       },
       fontSize: {
         '7xl': '4.4rem',
-        '10xl': '9rem',
+        '9xl': '6.4rem',
+        '10xl': '8.8rem',
       }
     },
   },
