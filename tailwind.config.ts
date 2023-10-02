@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -25,6 +25,9 @@ const config: Config = {
         '7xl': '4.4rem',
         '9xl': '6.4rem',
         '10xl': '8.8rem',
+      },
+      backgroundImage: {
+        'stars': "url('/Stars.png')",
       }
     },
   },
