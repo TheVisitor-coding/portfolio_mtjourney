@@ -78,14 +78,16 @@ function TitleSection() {
 
   return (
     <section className="">
-      <div className="relative title">
+      <div className="relative title flex justify-center">
         <h2 className="xl:text-10xl lg:text-8xl md:text-6xl text-4xl  font-moby text-text-color">COMPETENCES</h2>
         {texts.map((item, index) => (
+
           <motion.h2
             key={index}
             initial={{ y: 0 }}
             animate={{ y: positions[index] }}
-            className={`xl:text-10xl lg:text-8xl md:text-6xl text-4xl font-moby text-transparent font-outline-2 absolute top-0 left-0`}
+            transition={{ duration: 0.5 }}
+            className={`xl:text-10xl lg:text-8xl md:text-6xl text-4xl font-moby text-transparent font-outline-2 absolute top-0 left-1/6`}
           >
             {item.text}
           </motion.h2>
