@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/twl5efs.css" />
       </head>
-      <body className={"overflow-hidden"}>
+      <body className={"overflow-auto overflow-x-hidden m-auto"}>
         <Navbar />
         {children}
       </body>

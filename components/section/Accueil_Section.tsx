@@ -4,7 +4,7 @@ import ButtonGradient from "../ButtonGradient";
 function AccueilSection() {
   return (
     <>
-      <div className="relative flex flex-col items-center gap-5 mt-40">
+      <div className="relative flex flex-col items-center gap-5 lg:gap-7 xl:mt-52 mt-40 mb-64">
         <div className="text-text-color flex flex-col sm:flex-row md:gap-5 font-kallisto font-bold justify-center">
           <span className="w-64 lg:text-7xl text-6xl h-24 md:h-24 anim-text rotate-6 -translate-y-6">ROSSI</span>
           <div>
@@ -20,7 +20,7 @@ function AccueilSection() {
           <ButtonGradient title="Montrez-moi votre univers >>" />
           <div className=" text-transparent font-regular mix-blend-overlay z-0 -rotate-[10deg] xl:text-10xl md:text-9xl sm:text-7xl text-5xl lg:-translate-y-16 -translate-y-10  font-moby font-outline-2">MY UNIVERSE</div>
         </div>
-        <span className="absolute w-96 h-96 bottom-0 -left-56 rounded-full opacity-50 bg-primary-color mix-blend-screen blur-[118px]"></span>
+        <span className="absolute w-96 h-96 bottom-0 -left-56 rounded-full opacity-70 bg-primary-color mix-blend-screen blur-[118px]"></span>
 
       </div>
     </>
