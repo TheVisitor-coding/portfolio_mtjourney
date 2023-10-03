@@ -7,7 +7,7 @@ import { logo } from "../function/data";
 function Competences() {
   return (
     <>
-      <section className="lg:mt-64 mt-16">
+      <section className="lg:mt-24 mt-16">
         <div className="mt-64 flex flex-col lg:flex-row items-center justify-center lg:h-screen h-96 min-w-64 max-w-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: 'url(/Stars.png)' }}>
           {/* Color Blur Bg */}
           <span className="absolute w-96 h-96 bottom-1/4 -left-56 rounded-full bg-secondary-color mix-blend-screen blur-[118px] opacity-30"></span>
@@ -39,7 +39,7 @@ function Competences() {
             }}
             src={'./logo langage/javascript.png'}
             alt="js_logo"
-            className="absolute xl:top-28 top-2 xl:left-36 left-12 lg:w-50 lg:h-40"
+            className="absolute xl:top-28 top-2 xl:left-36 left-12 w-50 h-40"
           />
           <motion.img
             initial={{ y: 50 }}
