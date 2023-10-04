@@ -21,7 +21,7 @@ function Competences() {
             {
               logo.map((item, index) => (
                 <div key={index} className={`w-auto h-auto ${item.className}`}>
-                  <Image key={index} src={item.img} alt={item.alt} width={item.width} height={item.height} />
+                  <Image key={index} src={item.img} alt={item.alt} width={item.width} height={item.height} className="object-contain img-unset" />
                 </div>
               ))
             }
