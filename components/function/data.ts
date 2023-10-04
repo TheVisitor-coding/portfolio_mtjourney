@@ -12,3 +12,26 @@ export const logo = [
   { img: '/logo langage/vuejs.webp', alt: 'vuejs_logo', width: 50, height: 50, className: 'absolute bottom-3/4 left-24' },
   { img: '/logo langage/Wordpress.webp', alt: 'wordpress_logo', width: 100, height: 100, className: 'absolute bottom-2/3 right-96' }
 ]
+
+export const expertise = [
+  {
+    title: 'SITE WEB',
+    desc: 'Je vous accompagne dans tout le processus de création de votre site internet, du désign au déploiement. <br /> Je choisis pour votre projet la technologie la plus adaptée (Wordpress / React / ...)',
+    img: '/expertise/website.png'
+  },
+  {
+    title: 'APP MOBILE / WEB',
+    desc: 'Je développe votre application mobile ou web avec les dernières technologies du marché (React Native / React / ...)',
+    img: '/expertise/website.png'
+  },
+  {
+    title: 'REFONTE SITE',
+    desc: 'Je vous aide à améliorer votre site internet existant, en le modernisant et en le rendant plus performant.',
+    img: '/expertise/website.png'
+  },
+  {
+    title: 'AUDIT',
+    desc: 'Je réalise un audit complet de votre site internet afin de vous proposer des solutions pour améliorer ses performances.',
+    img: '/expertise/website.png'
+  }
+]

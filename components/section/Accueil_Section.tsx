@@ -6,7 +6,7 @@ import ButtonGradient from "../ButtonGradient";
 import { containerVariants, textVariants, buttonVariants, textShadowVariants } from "../function/animation";
 
 function AccueilSection() {
-  
+
   return (
     <motion.div
       className="relative flex flex-col items-center gap-5 lg:gap-7 2xl:mt-52 sm:mt-40 mt-20 mb-64"

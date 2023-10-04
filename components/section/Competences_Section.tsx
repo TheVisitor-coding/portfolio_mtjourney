@@ -7,8 +7,8 @@ import { logo } from "../function/data";
 function Competences() {
   return (
     <>
-      <section className="lg:mt-24 mt-16">
-        <div className="mt-64 flex flex-col lg:flex-row items-center justify-center lg:h-screen h-96 min-w-64 max-w-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: 'url(/Stars.png)' }}>
+      <section className="lg:mt-64 lg:mb-64 mb-16 mt-16">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:h-screen h-96 min-w-64 max-w-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: 'url(/Stars.png)' }}>
           {/* Color Blur Bg */}
           <span className="absolute w-96 h-96 bottom-1/4 -left-56 rounded-full bg-secondary-color mix-blend-screen blur-[118px] opacity-30"></span>
           <span className="absolute w-96 h-96 -top-20 -right-56 rounded-full opacity-40 bg-primary-color mix-blend-screen blur-[118px]"></span>

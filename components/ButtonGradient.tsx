@@ -1,10 +1,15 @@
-import { ButtonProps } from "./types";
+"use client";
 
-function ButtonGradient({ title, handleClick }: ButtonProps) {
+import { ButtonProps } from "./types";
+import { motion } from "framer-motion";
+
+function ButtonGradient({ title, className }: ButtonProps) {
   return (
-    <button className="gradient-btn z-10 font-kallisto text-lg text-text-color font-medium py-3 md:px-16 px-8  rounded-[30px]">
+    <motion.button
+      className={`${className} gradient-btn z-10 font-kallisto text-text-color font-medium rounded-[30px]`}
+    >
       {title}
-    </button>
+    </motion.button>
   );
 }
 
