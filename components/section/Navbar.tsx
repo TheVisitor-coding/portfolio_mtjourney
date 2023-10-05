@@ -12,7 +12,7 @@ function Navbar() {
       <motion.nav initial="initial" animate="animate" variants={containerVariants} className="flex flex-row justify-between items-center mt-5 lg:mx-16 mx-5">
         <Image src="/logo_mtjourney.png" alt="MT_Journey Logo" width={63} height={33} className="" />
         <motion.div variants={textVariants} className="flex flex-row xl:gap-24 lg:gap-14 gap-5 text-text-color font-moby xl:text-xs text-[10px]">
-          <a href="#" className="anim-a"><p>//Competences</p></a>
+          <a href="#"><p>//Competences</p></a>
           <a href="#">//Expertises</a>
           <a href="#">//Process</a>
           <a href="#">//Portfolio</a>

@@ -11,6 +11,7 @@ export default function Page() {
       <Competences />
       <TitleSection title='EXPERTISES' yBegin={-1211} yEnd={-2077} />
       <Expertises />
+      <TitleSection title='PROCESS' yBegin={-1211} yEnd={-2077} />
     </main>
 
   )
