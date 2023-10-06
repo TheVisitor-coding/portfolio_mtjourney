@@ -13,6 +13,7 @@ const config: Config = {
         "bg-color": "var(--bg-color)",
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
+        "darkpurple": "#372E8A"
       },
       borderWidth: {
         1: '1px',
