@@ -31,7 +31,7 @@ function Expertises() {
           <div className="flex flex-col justify-center items-center gap-16">
             {
               expertise.map((item, index) => (
-                <div className="max-w-[34rem] flex justify-center max-[1280px]:items-center flex-col gap-5 sm:mx-0 mx-10">
+                <div key={index} className="max-w-[34rem] flex justify-center max-[1280px]:items-center flex-col gap-5 sm:mx-0 mx-10">
                   <Image src={item.img} alt="expertises" width={150} height={150} />
                   <h4 className="font-moby text-[1.8rem] sm:text-[3.1rem] text-text-color xl:text-left text-center whitespace-nowrap">{item.title}</h4>
                   <p className="text-text-color xl:text-left text-justify font-kallisto text-[0.95rem] sm:text-[1.2rem] font-light">{item.desc}
