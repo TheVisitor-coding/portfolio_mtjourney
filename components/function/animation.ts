@@ -8,7 +8,7 @@ export const containerVariants = {
     y: 0,
     transition: {
       duration: 1, // Durée de l'animation
-      delay: 0.5, // Délai avant le début de l'animation
+      delay: 0.3, // Délai avant le début de l'animation
     },
   },
 };
@@ -23,7 +23,7 @@ export const textVariants = {
     x: 0,
     transition: {
       duration: 1,
-      delay: 1, // Délai pour que le texte apparaisse après le conteneur
+      delay: 0.5, // Délai pour que le texte apparaisse après le conteneur
     },
   },
 };
@@ -36,7 +36,7 @@ export const buttonVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      delay: 1.5, // Délai pour que le bouton apparaisse après le texte
+      delay: 0.5, // Délai pour que le bouton apparaisse après le texte
     },
   },
 };

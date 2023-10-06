@@ -14,6 +14,7 @@ export default function Page() {
       <TitleSection title='PROCESS' yBegin={-1211} yEnd={-2077} />
       <Transi_Process />
       <Process />
+      <TitleSection title='PROJETS' yBegin={-1211} yEnd={-2077} />
     </main>
 
   )
