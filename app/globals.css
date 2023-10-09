@@ -12,6 +12,12 @@
 
   }
 
+  .font-outline-1 {
+    /* Fond transparent */
+    -webkit-text-stroke: 1px var(--text-color);
+
+  }
+
 }
 
 :root {

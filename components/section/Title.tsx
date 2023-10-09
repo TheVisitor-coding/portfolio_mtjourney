@@ -63,7 +63,7 @@ function TitleSection({ title, yBegin, yEnd }: TitleProps) {
 
 
   return (
-    <section className="">
+    <section>
       <div className="relative title flex justify-center">
         <h2 ref={ref} className="xl:text-10xl lg:text-8xl md:text-7xl sm:text-6xl text-4xl  font-moby text-text-color">{title}</h2>
         {texts.map((item, index) => (

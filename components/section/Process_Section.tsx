@@ -131,7 +131,7 @@ function Process() {
           animate={inView ? 'animate' : 'initial'}
           variants={buttonVariants}
           className="flex justify-center lg:mr-64">
-          <ButtonGradient title="Discutons de votre Projet" className="sm:py-4 sm:px-16 py-4 px-8 text-[12px] sm:text-[1rem]" />
+          <ButtonGradient title="Discutons de votre Projet" className="sm:py-4 sm:px-16 py-4 px-8 text-[14px] sm:text-[1rem]" />
         </motion.div>
 
       </section>

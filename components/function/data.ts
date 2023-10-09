@@ -92,3 +92,11 @@ export const buttons = [
   { id: 4, isOpen: false, name: "Design", icon: "/process/discuss.png", classBtn: "rounded-full w-14 h-14 border-1 flex justify-center items-center lg:-translate-x-9 lg:translate-y-5", classDiv: "lg:top-1/3 lg:right-20 top-14 -right-14" },
   { id: 5, isOpen: false, name: "Développement", icon: "/process/discuss.png", classBtn: "rounded-full w-14 h-14 border-1 flex justify-center items-center lg:translate-y-5", classDiv: "lg:top-1/3 lg:right-12 top-14 -right-14" },
 ]
+
+export const project = [
+  { nom: "Projet 1", img: "/capture.png", alt: "project1", desc: "Description du projet 1", attr1: "React", attr2: "NodeJS" },
+  { nom: "Projet 2", img: "/capture.png", alt: "project2", desc: "Description du projet 2", attr1: "React", attr2: "NodeJS" },
+  { nom: "Projet 2", img: "/capture.png", alt: "project2", desc: "Description du projet 2", attr1: "React", attr2: "NodeJS" },
+  { nom: "Projet 2", img: "/capture.png", alt: "project2", desc: "Description du projet 2", attr1: "React", attr2: "NodeJS" },
+
+]
