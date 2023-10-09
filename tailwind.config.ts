@@ -13,7 +13,8 @@ const config: Config = {
         "bg-color": "var(--bg-color)",
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
-        "darkpurple": "#372E8A"
+        "darkpurple": "#372E8A",
+        "cardbg": "#202022"
       },
       borderWidth: {
         1: '1px',
@@ -29,7 +30,11 @@ const config: Config = {
       },
       backgroundImage: {
         'stars': "url('/Stars.png')",
-      }
+      },
+      boxShadow: {
+        'card': "2px 2px 4px 0px rgba(0, 0, 0, 0.25)",
+        'imgcard': "0px 4px 10px 0px rgba(0, 0, 0, 0.25)"
+      },
     },
   },
   plugins: [],

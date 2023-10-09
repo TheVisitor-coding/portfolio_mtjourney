@@ -1,4 +1,4 @@
-import { Competences, Expertises, Process, TitleSection, Transi_Process } from "@/components";
+import { Competences, Expertises, Process, Project, TitleSection, Transi_Process } from "@/components";
 import AccueilSection from "@/components/section/Accueil_Section";
 
 
@@ -15,6 +15,8 @@ export default function Page() {
       <Transi_Process />
       <Process />
       <TitleSection title='PROJETS' yBegin={-1211} yEnd={-2077} />
+      <Project />
+      <TitleSection title='CONTACT' yBegin={-1211} yEnd={-2077} />
     </main>
 
   )
