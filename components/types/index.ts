@@ -5,6 +5,7 @@ export interface ButtonProps {
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   className: string;
   velocite?: number;
+  type?: "button" | "submit" | "reset" | undefined;
 }
 
 export interface TitleProps {

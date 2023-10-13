@@ -14,7 +14,11 @@ const config: Config = {
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
         "darkpurple": "#372E8A",
-        "cardbg": "#202022"
+        "cardbg": "#202022",
+        "linkedin": "#004C74",
+        "malt": "#C33632",
+        "github": "#222222",
+        "mail": "#A03933"
       },
       borderWidth: {
         1: '1px',

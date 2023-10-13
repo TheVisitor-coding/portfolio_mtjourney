@@ -7,6 +7,7 @@ import Expertises from "./section/Expertises_Section"
 import Transi_Process from "./section/Transi_Process"
 import Process from "./section/Process_Section"
 import Project from "./section/Project"
+import Contact from "./section/Contact"
 
 export {
     Navbar,
@@ -17,5 +18,6 @@ export {
     Expertises,
     Transi_Process,
     Process,
-    Project
+    Project,
+    Contact
 }

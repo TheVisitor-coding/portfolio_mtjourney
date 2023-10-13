@@ -3,12 +3,12 @@
 import ButtonGradient from "../ButtonGradient";
 import ButtonPlanet from "../ButtonPlanet";
 import Image from "next/image";
-import { expertise } from "../function/data";
+import { expertise } from "../function/data/dataExpertise";
 
 function Expertises() {
   return (
     <>
-      <section className="mt-64 mb-64">
+      <section id="expertises" className="mt-64 mb-64">
         <div className="flex xl:flex-row flex-col xl:gap-0 gap-36 justify-around align-middle relative">
 
           <Image src="/circle_form1.svg" alt="circle shape" width={450} height={450} className="absolute xl:bottom-2/4 sm:bottom-2/3 bottom-2/4 xl:-left-10 sm:-left-16 -left-2/4" />
@@ -22,8 +22,8 @@ function Expertises() {
               <p className="text-text-color text-[0.95rem] sm:text-[1.25rem] font-light leading-6">Un Projet ? L'envie de débuter une nouvelle aventure en ma compagnie ?</p>
               <p className="text-text-color text-[0.95rem] sm:text-[1.25rem] font-light leading-6">De par mes diverses compétences, je vous propose plusieurs expertises afin de vous accompagner au mieux dans vos projets</p>
               <div className="flex flex-row flex-wrap justify-center sm:justify-between gap-5 sm:gap-0">
-                <ButtonGradient title="Commencer l'aventure" className="sm:py-4 sm:px-10 py-4 px-8 text-[12px] sm:text-[1rem]" />
-                <ButtonPlanet title="Voir mon processus >>" className="sm:py-4 sm:px-5 py-4 px-5 text-[12px] sm:text-[1rem] rounded-3xl" velocite={2000} />
+                <ButtonGradient title="Commencer l'aventure" className="sm:py-4 sm:px-10 py-4 px-8 text-[12px] sm:text-[1rem]" handleClick={() => { window.location.href = '#contact' }} />
+                <ButtonPlanet title="Voir mon processus >>" className="sm:py-4 sm:px-5 py-4 px-5 text-[12px] sm:text-[1rem] rounded-3xl" velocite={2000} handleClick={() => { window.location.href = '#process' }} />
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@ function Expertises() {
             {
               expertise.map((item, index) => (
                 <div key={index} className="max-w-[34rem] flex justify-center max-[1280px]:items-center flex-col gap-5 sm:mx-0 mx-10">
-                  <Image src={item.img} alt="expertises" width={150} height={150} />
+                  <Image src={item.img} alt="expertises" width={250} height={200} />
                   <h4 className="font-moby text-[1.8rem] sm:text-[3.1rem] text-text-color xl:text-left text-center whitespace-nowrap">{item.title}</h4>
                   <p className="text-text-color xl:text-left text-justify font-kallisto text-[0.95rem] sm:text-[1.2rem] font-light">{item.desc}
                   </p>
