@@ -109,12 +109,12 @@ function Process() {
             <span className="w-full h-[2px] bg-text-color opacity-50"></span>
             <div className="flex flex-col gap-2 2xl:gap-5">
               <p className="2xl:text-[1.125rem] xl:text-[1rem] text-[0.8rem] text-text-color">{contenuSection[idBtn - 1].subtxt}</p>
-              <div className="flex flex-row justify-between items-center">
+              {/* <div className="flex flex-row justify-between items-center">
                 <CurvingLine />
-                <p className="2xl:text-[2rem] xl:text-[1.5rem] text-[1rem]  text-secondary-color font-kallisto font-bold ">Lorem Ipsum</p>
-              </div>
+                <p className="2xl:text-[2rem] xl:text-[1.5rem] text-[1rem]  text-secondary-color font-kallisto font-bold ">{contenuSection[idBtn - 1].wrdImportant}</p>
+              </div> */}
             </div>
-            <span className="w-full h-[2px] bg-text-color opacity-50"></span>
+            {/* <span className="w-full h-[2px] bg-text-color opacity-50"></span>
             <div className="flex flex-row justify-between items-top font-bold font-kallisto text-justify text-text-color">
               <span className="flex flex-col xl:gap-12 gap-5">
                 <p className="xl:text-lg text-md">Lorem Ipsum lorem</p>
@@ -123,7 +123,7 @@ function Process() {
               <span className="w-[2px] xl:h-32 h-24 -translate-y-2 bg-text-color opacity-50 mx-5"></span>
               <p>Lorem Ipsum Ipsum</p>
             </div>
-            <span className="w-full h-[2px]  -translate-y-4 bg-text-color opacity-50"></span>
+            <span className="w-full h-[2px]  -translate-y-4 bg-text-color opacity-50"></span> */}
           </div>
         </motion.div>
         <motion.div
@@ -131,7 +131,7 @@ function Process() {
           animate={inView ? 'animate' : 'initial'}
           variants={buttonVariants}
           className="flex justify-center lg:mr-64">
-          <ButtonGradient title="Discutons de votre Projet" className="sm:py-4 sm:px-16 py-4 px-8 text-[14px] sm:text-[1rem]" handleClick={() => { window.location.href = '#contact' }} />
+          <ButtonGradient title="Discutons de votre Projet" className="sm:py-4 sm:px-16 py-4 px-8 md:mt-0 mt-5 text-[14px] sm:text-[1rem]" handleClick={() => { window.location.href = '#contact' }} />
         </motion.div>
 
       </section>
