@@ -5,7 +5,7 @@ import { CurvingLine } from "..";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ButtonGradient from "../ButtonGradient";
-import { contenuSection, buttons } from "../function/data";
+import { contenuSection, buttons } from "../function/data/dataProcess";
 import { buttonVariants, containerVariants, divVariants, textVariants } from "../function/animation";
 import { useInView } from "react-intersection-observer";
 
@@ -33,7 +33,7 @@ function Process() {
 
   return (
     <>
-      <section className="lg:mt-42 lg:mb-64 mb-16 mt-16">
+      <section id="process" className="mt-64 mb-64">
 
         {/* Button Tiny Screen */}
         <div className="flex flex-row justify-center md:gap-16 gap-2 lg:hidden">
@@ -43,7 +43,7 @@ function Process() {
                 <motion.div initial="closed" // État initial
                   animate={button.isOpen ? "open" : "closed"} // Utilisation des variants
                   variants={divVariants}
-                  className={`rounded-2xl flex items-center justify-center bg-primary-color absolute ${button.classDiv} `}><p className="font-moby text-sm text-text-color">{button.name}</p></motion.div>
+                  className={`rounded-2xl flex items-center justify-center bg-primary-color absolute ${button.classDiv} `}><p className="overflow-x-hidden font-moby text-sm text-text-color">{button.name}</p></motion.div>
                 <motion.button
 
                   onClick={() => handleButtonClick(button.id)}
@@ -74,7 +74,7 @@ function Process() {
                   <motion.div initial="closed" // État initial
                     animate={button.isOpen ? "open" : "closed"} // Utilisation des variants
                     variants={divVariants}
-                    className={`rounded-2xl flex items-center justify-center bg-primary-color absolute ${button.classDiv} `}><p className="font-moby text-sm text-text-color">{button.name}</p></motion.div>
+                    className={`rounded-2xl flex items-center justify-center bg-primary-color absolute ${button.classDiv} `}><p className={`font-moby text-sm text-text-color`}>{button.name}</p></motion.div>
                   <motion.button
 
                     onClick={() => handleButtonClick(button.id)}
@@ -131,7 +131,7 @@ function Process() {
           animate={inView ? 'animate' : 'initial'}
           variants={buttonVariants}
           className="flex justify-center lg:mr-64">
-          <ButtonGradient title="Discutons de votre Projet" className="sm:py-4 sm:px-16 py-4 px-8 text-[14px] sm:text-[1rem]" />
+          <ButtonGradient title="Discutons de votre Projet" className="sm:py-4 sm:px-16 py-4 px-8 text-[14px] sm:text-[1rem]" handleClick={() => { window.location.href = '#contact' }} />
         </motion.div>
 
       </section>

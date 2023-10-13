@@ -2,14 +2,27 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { project } from '../function/data';
+import { project } from '../function/data/dataProject';
+import { useState } from 'react';
+import ProjectResume, { Project } from '../ProjectResume';
 
 function Project() {
 
+  const [openProject, setOpenProject] = useState<Project | null>(null);
+
+  // Créez une fonction pour gérer l'ouverture du détail du projet.
+  const openProjectDetail = (project: Project) => {
+    setOpenProject(project);
+  };
+
+  // Créez une fonction pour fermer le détail du projet.
+  const closeProjectDetail = () => {
+    setOpenProject(null);
+  };
   return (
     <>
-      <section className="lg:mt-64 lg:mb-64 mb-16 mt-16">
-        <div className="relative flex flex-col h-screen gap-24">
+      <section id='project' className="mt-64 mb-64 ">
+        <div className="relative flex flex-col h-min gap-24">
           <h3 className="absolute -translate-x-[20rem] opacity-0 lg:opacity-30 mix-blend-overlay font-kallisto left-0 top-1/3 lg:text-10xl md:text-6xl text-4xl text-text-color font-bold rotate-90">
             PROJETS</h3>
           <Image src="/circle_form1.svg" alt="circle shape" width={450} height={450} className="absolute right-0 rotate-180" />
@@ -23,9 +36,12 @@ function Project() {
             className="flex justify-center lg:justify-start gap-14 flex-row  flex-wrap xl:ml-64 lg:ml-44" >
 
             {
-              project.map((project) => (
-                <div className='flex flex-col cursor-pointer bg-cardbg sm:max-w-sm max-w-xs max-h-fit rounded-3xl rotate-2 duration-500 transition-all hover:scale-105 hover:rotate-0 shadow-card'>
-                  <Image src={project.img} alt={project.alt} width={400} height={400} className='rounded-t-3xl shadow-imgcard max-w-full max-h-[13rem]' />
+              project.map((project, index) => (
+                <div
+                  onClick={() => openProjectDetail(project)}
+                  key={index}
+                  className='flex flex-col cursor-pointer bg-cardbg sm:max-w-sm max-w-xs max-h-fit rounded-3xl rotate-2 duration-500 transition-all hover:scale-105 hover:rotate-0 shadow-card'>
+                  <Image src={project.img} alt={project.alt} width={400} height={400} className='rounded-t-3xl shadow-imgcard object-cover max-w-full min-h-[13rem] max-h-[13rem]' />
                   <div className='flex flex-col ml-5 mt-3'>
                     <h5 className="text-[1.25rem] font-bold font-kallisto text-text-color whitespace-nowrap">
                       {project.nom}
@@ -41,6 +57,14 @@ function Project() {
               ))
             }
           </motion.div>
+
+          {openProject && (
+            <ProjectResume
+              project={openProject}
+              isOpen={openProject !== null}
+              onClose={closeProjectDetail}
+            />
+          )}
         </div>
 
       </section>

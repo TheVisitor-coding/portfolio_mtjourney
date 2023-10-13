@@ -38,16 +38,6 @@ function ButtonPlanet({ title, handleClick, className, velocite }: ButtonProps) 
   };
 
   return (
-    // <div>
-    //   {/* <span className="absolute z-10 transition-all -top-1 right-8 w-2 h-2 bg-text-color rounded-full hover:left-8"></span>
-    //   <span className="absolute z-20 transition-all -bottom-1 left-8 w-2 h-2 bg-text-color rounded-full hover:right-8"></span> */}
-    //   <button
-    //     className={`relative z-0 ${className}  border-1 border-text-color text-text-color font-kallisto tracking-widest`}
-    //   >
-    //     {title}
-    //   </button>
-    // </div>
-
 
     <motion.button
       className={`relative z-10 ${className} border-1 border-text-color text-text-color font-kallisto tracking-widest cursor-pointer`}
@@ -56,6 +46,7 @@ function ButtonPlanet({ title, handleClick, className, velocite }: ButtonProps) 
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       transition={{ duration: 0.5 }}
+      onClick={handleClick}
     >
       <motion.span
         className="absolute z-20 transition-all -bottom-1 left-8 w-2 h-2 bg-text-color rounded-full"

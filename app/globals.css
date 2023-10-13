@@ -29,6 +29,27 @@
   --font-kallisto: 'kallisto', sans-serif;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 14px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 14px;
+  height: 10vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
+}
+
+
+
 body {
   background-color: var(--bg-color);
   margin: 0;
