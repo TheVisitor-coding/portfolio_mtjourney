@@ -20,9 +20,9 @@ function Contact() {
         animate={inView1 ? 'animate' : 'initial'}
         className="flex justify-center items-center flex-col text-center relative font-kallisto font-medium text-2xl sm:text-[2rem] lg:text-[2.5rem] gap-2">
 
-        <p className="text-text-color w-5/6 md:w-4/6 xl:w-3/6 leading-[3.5rem]">C'est ici que votre <span className="text-secondary-color font-bold ">périple</span> dans mon
-          <span className="text-secondary-color font-bold "> univers</span> s'achève...</p>
-        <p className="text-secondary-color font-bold ">A moins que ?</p>
+        <p className="text-text-color w-5/6 md:w-4/6 xl:w-3/6 leading-[3.5rem]">{"C'est ici que votre "}<span className="text-secondary-color font-bold ">périple</span>{" dans mon"}
+          <span className="text-secondary-color font-bold ">{" univers"}</span>{" s'achève..."}</p>
+        <p className="text-secondary-color font-bold ">{"A moins que ?"}</p>
         <span className="absolute md:w-[20rem] md:h-36 w-72 h-72 rounded-full opacity-50  bg-secondary-color mix-blend-screen blur-[125px]"></span>
         {/* <Image src="/social/elipseContact.png" alt="circle shape" width={450} height={450} className="absolute right-2/3 top-full 2xl:flex hidden" /> */}
       </motion.div>

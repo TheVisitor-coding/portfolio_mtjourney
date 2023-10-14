@@ -21,45 +21,21 @@ function TitleSection({ title, yBegin, yEnd }: TitleProps) {
     threshold: 0.1, // Définir le seuil de visibilité
   });
 
-  // useEffect(() => {
-  //   if (inView) {
-  //     const newPositions = texts.map((item, _) => {
-  //       return (yBegin - yEnd) * item.scrollFactor;
-  //     });
-
-  //     // Utilisez une fonction de rappel pour mettre à jour positions
-  //     setPositions(newPositions);
-  //   } else {
-  //     // Réinitialisez les positions avec l'effet inverse lorsque le composant n'est plus visible
-  //     const newPositions = texts.map((_, index) => {
-  //       return positions[index] * -1;
-  //     });
-
-  //     // Utilisez une fonction de rappel pour mettre à jour positions
-  //     setPositions(newPositions);
-  //   }
-  // }, [inView, yBegin, yEnd, texts]);
-
-
   const textsRef = useRef<typeof texts>(texts);
 
   useEffect(() => {
     if (inView) {
-      const newPositions = textsRef.current.map((item: { text: { title: string }; scrollFactor: number }, index: number) => {
+      const newPositions = textsRef.current.map((item, index) => {
         return (yBegin - yEnd) * item.scrollFactor;
-      });
-
-      // Utilisez une fonction de rappel pour mettre à jour positions
-      setPositions(newPositions);
-    } else {
-      // Réinitialisez les positions avec l'effet inverse lorsque le composant n'est plus visible
-      const newPositions = textsRef.current.map((item: any, index: number) => {
-        return positions[index] * -1;
       });
       // Utilisez une fonction de rappel pour mettre à jour positions
       setPositions(newPositions);
     }
+    else {
+      setPositions([0, 0, 0, 0]);
+    }
   }, [inView, yBegin, yEnd, textsRef]);
+
 
 
   return (

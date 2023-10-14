@@ -19,8 +19,8 @@ function Expertises() {
             <span className="absolute md:w-96 md:h-96 w-72 h-72 xl:bottom-3/4 xl:-left-1/4 -left-[0.5rem] bottom-2/4 rounded-full bg-secondary-color mix-blend-overlay blur-[120px]"></span>
             <div className="sticky top-0 max-w-[35rem] font-kallisto h-min flex flex-col gap-8"> {/* Définissez une hauteur appropriée ici, par exemple, h-screen */}
               <h3 className="text-text-color text-[2rem] sm:text-[3.75rem] font-bold ">Mes Expertises</h3>
-              <p className="text-text-color text-[0.95rem] sm:text-[1.25rem] font-light leading-6">Un Projet ? L'envie de débuter une nouvelle aventure en ma compagnie ?</p>
-              <p className="text-text-color text-[0.95rem] sm:text-[1.25rem] font-light leading-6">De par mes diverses compétences, je vous propose plusieurs expertises afin de vous accompagner au mieux dans vos projets</p>
+              <p className="text-text-color text-[0.95rem] sm:text-[1.25rem] font-light leading-6">{"Un Projet ? L'envie de débuter une nouvelle aventure en ma compagnie ?"}</p>
+              <p className="text-text-color text-[0.95rem] sm:text-[1.25rem] font-light leading-6">{"De par mes diverses compétences, je vous propose plusieurs expertises afin de vous accompagner au mieux dans vos projets"}</p>
               <div className="flex flex-row flex-wrap justify-center sm:justify-between gap-5 sm:gap-0">
                 <ButtonGradient title="Commencer l'aventure" className="sm:py-4 sm:px-10 py-4 px-8 text-[12px] sm:text-[1rem]" handleClick={() => { window.location.href = '#contact' }} />
                 <ButtonPlanet title="Voir mon processus >>" className="sm:py-4 sm:px-5 py-4 px-5 text-[12px] sm:text-[1rem] rounded-3xl" velocite={2000} handleClick={() => { window.location.href = '#process' }} />
