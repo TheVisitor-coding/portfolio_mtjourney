@@ -38,11 +38,11 @@ function Navbar() {
       <motion.nav initial="initial" animate="animate" variants={containerVariants} className="flex flex-row justify-between items-center mt-5 lg:mx-16 mx-5">
         <Image src="/logo_mtjourney.png" alt="MT_Journey Logo" width={63} height={33} className="" />
         <motion.div variants={textVariants} className="lg:flex hidden flex-row xl:gap-24 lg:gap-14 gap-5 text-text-color font-moby xl:text-xs text-[10px] scroll-smooth">
-          <a href="#competences"><p>//Competences</p></a>
-          <a href="#expertises"><p>//Expertises</p></a>
-          <a href="#process"><p>//Process</p></a>
-          <a href="#project"><p>//Portfolio</p></a>
-          <a href="#contact"><p>//Contact</p></a>
+          <a href="#competences"><p>{"//Competences"}</p></a>
+          <a href="#expertises"><p>{"//Expertises"}</p></a>
+          <a href="#process"><p>{"//Process"}</p></a>
+          <a href="#project"><p>{"//Portfolio"}</p></a>
+          <a href="#contact"><p>{"//Contact"}</p></a>
         </motion.div>
         <motion.div variants={buttonVariants} className="relative lg:flex hidden">
           <ButtonPlanet title="Un Projet ?" className="lg:px-8 lg:py-5 px-6 py-4 text-xs rounded-2xl" velocite={1000} handleClick={() => { window.location.href = '#contact' }} />
@@ -63,11 +63,11 @@ function Navbar() {
           variants={menuVariants}
           transition={{ type: "tween", duration: 0.3 }}>
           <div className="pt-16 pl-4 text-text-color font-moby text-[10px] flex flex-col gap-6">
-            <motion.a whileHover={{ translateX: 5 }} href="#competences"><p>//Competences</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#expertises"><p>//Expertises</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#process"><p>//Process</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#project"><p>//Portfolio</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#contact"><p>//Contact</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} href="#competences"><p>{"//Competences"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} href="#expertises"><p>{"//Expertises"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} href="#process"><p>{"//Process"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} href="#project"><p>{"//Portfolio"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} href="#contact"><p>{"//Contact"}</p></motion.a>
             <button className="rounded-full p-2 bg-primary-color mb-2" onClick={closeMenu}>X</button>
           </div>
         </motion.div>
