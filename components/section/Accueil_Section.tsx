@@ -20,9 +20,9 @@ function AccueilSection() {
           className="text-text-color flex flex-col sm:flex-row md:gap-5 font-kallisto font-bold justify-center"
           variants={textVariants}
         >
-          <span className="w-64 lg:text-7xl text-6xl h-24 md:h-20 anim-text md:rotate-6 md:-translate-y-6">ROSSI</span>
-          <div>
-            <span className="lg:text-7xl text-6xl">Matteo</span>
+          <span className="w-64 lg:text-7xl text-6xl h-24 md:h-20 anim-text max-[640px]:text-center md:rotate-6 md:-translate-y-6">ROSSI</span>
+          <div className="max-[640px]:text-center">
+            <span className="lg:text-7xl text-6xl max-[640px]:text-center">Matteo</span>
             <CurvingLine />
           </div>
         </motion.div>

@@ -25,7 +25,7 @@ export const contenuSection = [
     txtpercent: "L'ergonomie est souvent un facteur délaissé qui peut être fatal pour la réussite d'un projet. On compte, le pourcentage de business en ligne échouant à cause d'une mauvaise ergonomie à :",
     pourcentage: "70%",
     subtxt: "L'aspect visuel ainsi que l'ergonomie sont deux fondements de la réussite d'un projet. L'étape du design permet donc d'assurer avant le développement une expérience utilisateur réussie et une interface agréable.",
-    char3D: "https://prod.spline.design/0kOJ6pLbz5GJfbp4/scene.splinecode"
+    char3D: "https://prod.spline.design/2qvSswuu5US01cYp/scene.splinecode"
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const contenuSection = [
     txtpercent: "Une règle de plus en plus importante dans le développement est la performance. En effet, on compte le pourcentage d'utilisateurs quittant un site internet à cause d'un temps de chargement trop long à :",
     pourcentage: "40%",
     subtxt: "Le développement informatique étant ma spécialité, j'interviens sur tous les domaines de celui-ci. J'assure le bon développement du frontend (ce que vois l'utilisateur), du backend (ce qui se passe côté serveur), de la base de données, ainsi que la mise en ligne et l'adaptabilité du projet.",
-    char3D: "https://prod.spline.design/0kOJ6pLbz5GJfbp4/scene.splinecode"
+    char3D: "https://prod.spline.design/rHJdsubOr1cE-v6Q/scene.splinecode"
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ export const contenuSection = [
     txtpercent: "La maintenance d'un site permet de garder le site optimiser, d'éviter les bugs et les failles de sécurités. On compte le pourcentage de sites Wordpress ayant des failles de sécurités à : ",
     pourcentage: "42%",
     subtxt: "Lorsqu'un client arrive à cette étape en ma compagnie, j'espère que celui-ci est satisfait du travail effectué. C'est toujours un plaisir d'agir sur de nouveaux projets et d'en lancer ensuite de nouveaux.",
-    char3D: "https://prod.spline.design/Vh3bCdNRlaHTRxhR/scene.splinecode"
+    char3D: "https://prod.spline.design/9lWlxeeLg39wVZZp/scene.splinecode"
   },
 ]
 

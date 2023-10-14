@@ -4,6 +4,7 @@ import './globals.css'
 export const metadata = {
   title: 'Portfolio MT_Journey',
   description: 'Freelance Web Developer',
+  image: '/logo_mtjourney.png',
 }
 
 export default function RootLayout({
@@ -12,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/twl5efs.css" />
       </head>

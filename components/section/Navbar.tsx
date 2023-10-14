@@ -33,16 +33,46 @@ function Navbar() {
     },
   };
 
+  const linkAnim = {
+    hover: {
+      rotate: 5,
+      translateX: 5,
+      translateY: -5,
+      color: "#F9D399",
+      transition: {
+        type: "spring",
+        duration: 1,
+        stiffness: 100,
+        ease: "easeInOut",
+      },
+    },
+  }
+
   return (
     <>
       <motion.nav initial="initial" animate="animate" variants={containerVariants} className="flex flex-row justify-between items-center mt-5 lg:mx-16 mx-5">
         <Image src="/logo_mtjourney.png" alt="MT_Journey Logo" width={63} height={33} className="" />
         <motion.div variants={textVariants} className="lg:flex hidden flex-row xl:gap-24 lg:gap-14 gap-5 text-text-color font-moby xl:text-xs text-[10px] scroll-smooth">
-          <a href="#competences"><p>{"//Competences"}</p></a>
-          <a href="#expertises"><p>{"//Expertises"}</p></a>
-          <a href="#process"><p>{"//Process"}</p></a>
-          <a href="#project"><p>{"//Portfolio"}</p></a>
-          <a href="#contact"><p>{"//Contact"}</p></a>
+          <motion.a
+            whileHover="hover"
+            variants={linkAnim}
+            href="#competences"><p>{"//Competences"}</p></motion.a>
+          <motion.a
+            whileHover="hover"
+            variants={linkAnim}
+            href="#expertises"><p>{"//Expertises"}</p></motion.a>
+          <motion.a
+            whileHover="hover"
+            variants={linkAnim}
+            href="#process"><p>{"//Process"}</p></motion.a>
+          <motion.a
+            whileHover="hover"
+            variants={linkAnim}
+            href="#project"><p>{"//Portfolio"}</p></motion.a>
+          <motion.a
+            whileHover="hover"
+            variants={linkAnim}
+            href="#contact"><p>{"//Contact"}</p></motion.a>
         </motion.div>
         <motion.div variants={buttonVariants} className="relative lg:flex hidden">
           <ButtonPlanet title="Un Projet ?" className="lg:px-8 lg:py-5 px-6 py-4 text-xs rounded-2xl" velocite={1000} handleClick={() => { window.location.href = '#contact' }} />
