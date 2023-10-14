@@ -98,3 +98,18 @@ export const divVariants = {
     height: "0",
   },
 };
+
+
+export const titleVariants = {
+  initial: {
+    opacity: 0,
+    x: -20,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};

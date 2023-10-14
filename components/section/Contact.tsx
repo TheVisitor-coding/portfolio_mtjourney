@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { textProcessVariants } from "../function/animation";
+import { containerVariants, textProcessVariants } from "../function/animation";
 import Form from "../Form";
 import Image from "next/image";
 
 function Contact() {
 
   const [ref1, inView1] = useInView();
-
+  const [ref2, inView2] = useInView();
 
   return (
     <section className="mt-64 mb-64 flex flex-col gap-[25rem] h-screen">
@@ -27,7 +27,12 @@ function Contact() {
         {/* <Image src="/social/elipseContact.png" alt="circle shape" width={450} height={450} className="absolute right-2/3 top-full 2xl:flex hidden" /> */}
       </motion.div>
 
-      <div className="relative" id="contact">
+      <motion.div
+        ref={ref2}
+        variants={containerVariants}
+        initial="initial"
+        animate={inView2 ? 'animate' : 'initial'}
+        className="relative" id="contact">
         {/* <Image src="/social/elipse2Contact.png" alt="circle shape" width={450} height={450} className="absolute hidden lg:flex left-1/4 xl:left-1/3 bottom-3/4" /> */}
         {/* <Image src="/social/circleGroup.svg" alt="Planet circle" width={350} height={350} className="absolute hidden md:flex -translate-x-32 xl:-translate-x-20 2xl:-translate-x-0 left-0 bottom-1/4" /> */}
 
@@ -64,7 +69,7 @@ function Contact() {
         </div>
 
         {/* <Image src="/social/meteor.svg" alt="meteor" width={800} height={800} className="absolute right-0 top-3/4 2xl:flex hidden -z-10" /> */}
-      </div>
+      </motion.div>
 
 
     </section>

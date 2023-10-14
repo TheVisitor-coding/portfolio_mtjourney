@@ -5,10 +5,14 @@ import { motion } from 'framer-motion'
 import { project } from '../function/data/dataProject';
 import { useState } from 'react';
 import ProjectResume, { Project } from '../ProjectResume';
+import { useInView } from 'react-intersection-observer';
+import { containerVariants } from '../function/animation';
 
 function Project() {
 
   const [openProject, setOpenProject] = useState<Project | null>(null);
+
+  const [ref, inView] = useInView()
 
   // Créez une fonction pour gérer l'ouverture du détail du projet.
   const openProjectDetail = (project: Project) => {
@@ -21,7 +25,12 @@ function Project() {
   };
   return (
     <>
-      <section id='project' className="mt-64 mb-64 ">
+      <motion.section
+        ref={ref}
+        initial="initial"
+        animate={inView ? 'animate' : 'initial'}
+        variants={containerVariants}
+        id='project' className="mt-64 mb-64 ">
         <div className="relative flex flex-col h-min gap-24">
           <h3 className="absolute -translate-x-[20rem] opacity-0 lg:opacity-30 mix-blend-overlay font-kallisto left-0 top-1/3 lg:text-10xl md:text-6xl text-4xl text-text-color font-bold rotate-90">
             PROJETS</h3>
@@ -67,7 +76,7 @@ function Project() {
           )}
         </div>
 
-      </section>
+      </motion.section>
     </>
   );
 }

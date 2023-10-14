@@ -4,11 +4,22 @@ import ButtonGradient from "../ButtonGradient";
 import ButtonPlanet from "../ButtonPlanet";
 import Image from "next/image";
 import { expertise } from "../function/data/dataExpertise";
+import { motion } from 'framer-motion'
+import { useInView } from "react-intersection-observer";
+import { blurVariants, containerVariants } from "../function/animation";
 
 function Expertises() {
+
+  const [ref, inView] = useInView();
+
   return (
     <>
-      <section id="expertises" className="mt-64 mb-64">
+      <motion.section
+        ref={ref}
+        initial="initial"
+        animate={inView ? 'animate' : 'initial'}
+        variants={containerVariants}
+        id="expertises" className="mt-64 mb-64">
         <div className="flex xl:flex-row flex-col xl:gap-0 gap-36 justify-around align-middle relative">
 
           <Image src="/circle_form1.svg" alt="circle shape" width={450} height={450} className="absolute xl:bottom-2/4 sm:bottom-2/3 bottom-2/4 xl:-left-10 sm:-left-16 -left-2/4" />
@@ -16,7 +27,7 @@ function Expertises() {
             EXPERTISES</h3>
 
           <div className="relative flex justify-center mx-10 sm:mx-0">
-            <span className="absolute md:w-96 md:h-96 w-72 h-72 xl:bottom-3/4 xl:-left-1/4 -left-[0.5rem] bottom-2/4 rounded-full bg-secondary-color mix-blend-overlay blur-[120px]"></span>
+            <motion.span variants={blurVariants} className="absolute md:w-96 md:h-96 w-72 h-72 xl:bottom-3/4 xl:-left-1/4 -left-[0.5rem] bottom-2/4 rounded-full bg-secondary-color mix-blend-overlay blur-[120px]"></motion.span>
             <div className="sticky top-0 max-w-[35rem] font-kallisto h-min flex flex-col gap-8"> {/* Définissez une hauteur appropriée ici, par exemple, h-screen */}
               <h3 className="text-text-color text-[2rem] sm:text-[3.75rem] font-bold ">Mes Expertises</h3>
               <p className="text-text-color text-[0.95rem] sm:text-[1.25rem] font-light leading-6">{"Un Projet ? L'envie de débuter une nouvelle aventure en ma compagnie ?"}</p>
@@ -43,7 +54,7 @@ function Expertises() {
           </div>
 
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

@@ -3,19 +3,28 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { logo } from "../function/data/dataCompetence";
+import { containerVariants, textShadowVariants } from "../function/animation";
+import { useInView } from "react-intersection-observer";
 
 function Competences() {
+
+  const [ref, inView] = useInView();
+
+
   return (
     <>
-      <section id="competences" className="mt-64 mb-64">
+      <motion.section ref={ref}
+        initial="initial"
+        animate={inView ? 'animate' : 'initial'}
+        variants={containerVariants} id="competences" className="mt-64 mb-64">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:h-screen h-96 min-w-64 max-w-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: 'url(/Stars.png)' }}>
           {/* Color Blur Bg */}
           <span className="absolute w-96 h-96 bottom-1/4 -left-56 rounded-full bg-secondary-color mix-blend-screen blur-[118px] opacity-30"></span>
           {/* <span className="absolute w-96 h-96 -top-20 -right-56 rounded-full opacity-40 bg-primary-color mix-blend-screen blur-[118px]"></span> */}
 
-          <h3 className="absolute -translate-x-[23rem] opacity-0 lg:opacity-30 mix-blend-overlay font-kallisto left-0 lg:text-8xl md:text-6xl text-4xl text-text-color font-bold rotate-90">
+          <motion.h3 variants={textShadowVariants} className="absolute -translate-x-[23rem] opacity-0 lg:opacity-30 mix-blend-overlay font-kallisto left-0 lg:text-8xl md:text-6xl text-4xl text-text-color font-bold rotate-90">
             COMPETENCES
-          </h3>
+          </motion.h3>
 
           {/* Screen < lg */}
           <h4 className="bg-gradient-to-r bg-clip-text text-transparent to-secondary-color from-primary-color font-kallisto font-bold text-4xl sm:text-6xl lg:hidden flex">Mes Skills</h4>
@@ -91,7 +100,7 @@ function Competences() {
             className="absolute lg:flex hidden lg:top-2/3 top-full xl:right-56 right-24 lg:w-28 w-20 h-20 lg:h-28"
           />
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

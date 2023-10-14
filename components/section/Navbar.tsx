@@ -93,11 +93,11 @@ function Navbar() {
           variants={menuVariants}
           transition={{ type: "tween", duration: 0.3 }}>
           <div className="pt-16 pl-4 text-text-color font-moby text-[10px] flex flex-col gap-6">
-            <motion.a whileHover={{ translateX: 5 }} href="#competences"><p>{"//Competences"}</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#expertises"><p>{"//Expertises"}</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#process"><p>{"//Process"}</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#project"><p>{"//Portfolio"}</p></motion.a>
-            <motion.a whileHover={{ translateX: 5 }} href="#contact"><p>{"//Contact"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} onClick={closeMenu} href="#competences"><p>{"//Competences"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} onClick={closeMenu} href="#expertises"><p>{"//Expertises"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} onClick={closeMenu} href="#process"><p>{"//Process"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} onClick={closeMenu} href="#project"><p>{"//Portfolio"}</p></motion.a>
+            <motion.a whileHover={{ translateX: 5 }} onClick={closeMenu} href="#contact"><p>{"//Contact"}</p></motion.a>
             <button className="rounded-full p-2 bg-primary-color mb-2" onClick={closeMenu}>X</button>
           </div>
         </motion.div>

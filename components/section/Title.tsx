@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { TitleProps } from '../types';
 import { useInView } from 'react-intersection-observer';
+import { titleVariants } from '../function/animation';
 
 function TitleSection({ title, yBegin, yEnd }: TitleProps) {
 
@@ -20,6 +21,7 @@ function TitleSection({ title, yBegin, yEnd }: TitleProps) {
     triggerOnce: false, // Activer la détection uniquement une fois
     threshold: 0.1, // Définir le seuil de visibilité
   });
+  const [ref2, inView2] = useInView()
 
   const textsRef = useRef<typeof texts>(texts);
 
@@ -39,7 +41,11 @@ function TitleSection({ title, yBegin, yEnd }: TitleProps) {
 
 
   return (
-    <section>
+    <motion.section
+      ref={ref}
+      initial="initial"
+      animate={inView ? 'animate' : 'initial'}
+      variants={titleVariants}>
       <div className="relative title flex justify-center">
         <h2 ref={ref} className="xl:text-10xl lg:text-8xl md:text-7xl sm:text-6xl text-4xl  font-moby text-text-color">{title}</h2>
         {texts.map((item, index) => (
@@ -56,7 +62,7 @@ function TitleSection({ title, yBegin, yEnd }: TitleProps) {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 }
 
