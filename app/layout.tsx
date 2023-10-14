@@ -1,12 +1,10 @@
+import { Navbar } from '@/components'
 import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Portfolio MT_Journey',
   description: 'Freelance Web Developer',
+  image: '/logo_mtjourney.png',
 }
 
 export default function RootLayout({
@@ -15,8 +13,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/twl5efs.css" />
+      </head>
+      <body className={"overflow-auto overflow-x-hidden m-auto"}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
