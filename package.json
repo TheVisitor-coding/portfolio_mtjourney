@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.467",
+    "@splinetool/runtime": "^0.9.481",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
