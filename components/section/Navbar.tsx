@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ButtonPlanet from "../ButtonPlanet";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { containerVariants, textVariants, buttonVariants, blurVariants } from "../function/animation";
 
 function Navbar() {
