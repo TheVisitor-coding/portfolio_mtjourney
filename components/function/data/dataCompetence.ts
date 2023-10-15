@@ -1,4 +1,3 @@
-"use static";
 
 
 export const logo = [
