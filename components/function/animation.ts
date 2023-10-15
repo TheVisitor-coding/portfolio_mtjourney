@@ -8,7 +8,7 @@ export const containerVariants = {
     y: 0,
     transition: {
       duration: 1, // Durée de l'animation
-      delay: 0.3, // Délai avant le début de l'animation
+      delay: 0.5, // Délai avant le début de l'animation
     },
   },
 };

@@ -1,7 +1,7 @@
 export const expertise = [
   {
     title: 'SITE WEB',
-    desc: 'Je vous accompagne dans tout le processus de création de votre site internet, du désign au déploiement. <br /> Je choisis pour votre projet la technologie la plus adaptée (Wordpress / React / ...)',
+    desc: 'Je vous accompagne dans tout le processus de création de votre site internet, du désign au déploiement. Je choisis pour votre projet la technologie la plus adaptée (Wordpress / React / ...)',
     img: '/expertise/website.svg'
   },
   {

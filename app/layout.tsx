@@ -1,5 +1,6 @@
 import { Navbar } from '@/components'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'Portfolio MT_Journey',
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={"overflow-auto overflow-x-hidden m-auto"}>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   )
