@@ -1,3 +1,5 @@
+"use static";
+
 export const project = [
   {
     nom: "Twint E-Sport",

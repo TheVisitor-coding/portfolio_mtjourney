@@ -1,3 +1,5 @@
+"use static";
+
 
 export const logo = [
   { img: '/logo langage/react_logo.png', alt: 'react_logo', width: 130, height: 130, className: 'absolute bottom-[23rem] left-[26rem]' },

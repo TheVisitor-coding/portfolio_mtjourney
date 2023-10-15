@@ -1,3 +1,5 @@
+"use static";
+
 export const expertise = [
   {
     title: 'SITE WEB',
