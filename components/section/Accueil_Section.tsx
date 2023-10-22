@@ -1,12 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { CurvingLine } from "..";
 import ButtonGradient from "../ButtonGradient";
 import { containerVariants, textVariants, buttonVariants, textShadowVariants } from "../function/animation";
 import UpButton from "../UpButton";
+import React, { Suspense } from 'react';
 
 function AccueilSection() {
+
+  const CurvingLineAsync = React.lazy(() => import('../dynamic_components/Dynamic_CurvingLine'));
 
   return (
     <>
@@ -23,7 +25,9 @@ function AccueilSection() {
           <span className="w-64 lg:text-7xl text-6xl h-24 md:h-20 anim-text max-[640px]:text-center md:rotate-6 md:-translate-y-6">ROSSI</span>
           <div className="max-[640px]:text-center">
             <span className="lg:text-7xl text-6xl max-[640px]:text-center">Matteo</span>
-            <CurvingLine />
+            <Suspense fallback={<div></div>}>
+              <CurvingLineAsync />
+            </Suspense>
           </div>
         </motion.div>
         <motion.div

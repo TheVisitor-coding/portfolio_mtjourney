@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://use.typekit.net/twl5efs.css');
-
 @layer base {
   .font-outline-2 {
     /* Fond transparent */

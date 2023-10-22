@@ -1,6 +1,4 @@
-"use client"
-
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useEffect } from "react";
 import ButtonGradient from "./ButtonGradient";
 import emailjs from 'emailjs-com';
 import Lottie from "lottie-react";
@@ -23,7 +21,6 @@ function Form() {
       mail,
       message,
     };
-    console.log(templateParams)
 
     try {
 

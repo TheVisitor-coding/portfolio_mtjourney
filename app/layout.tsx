@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/twl5efs.css" />
+        {/* <link rel="preload" href="https://use.typekit.net/twl5efs.css" as='style' /> */}
       </head>
       <body className={"overflow-auto overflow-x-hidden m-auto"}>
         <Navbar />

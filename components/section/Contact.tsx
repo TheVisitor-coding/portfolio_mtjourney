@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { containerVariants, textProcessVariants } from "../function/animation";
-import Form from "../Form";
+import Form from "../dynamic_components/Dynamic_Form";
 import Image from "next/image";
 
 function Contact() {

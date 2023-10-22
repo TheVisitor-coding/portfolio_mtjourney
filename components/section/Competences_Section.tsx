@@ -17,7 +17,7 @@ function Competences() {
         initial="initial"
         animate={inView ? 'animate' : 'initial'}
         variants={containerVariants} id="competences" className="mt-64 mb-64">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:h-screen h-96 min-w-64 max-w-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: 'url(/Stars.png)' }}>
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:h-screen h-96 min-w-64 max-w-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: 'url(/Stars.webp)' }}>
           {/* Color Blur Bg */}
           <span className="absolute w-96 h-96 bottom-1/4 -left-56 rounded-full bg-secondary-color mix-blend-screen blur-[118px] opacity-30"></span>
           {/* <span className="absolute w-96 h-96 -top-20 -right-56 rounded-full opacity-40 bg-primary-color mix-blend-screen blur-[118px]"></span> */}
@@ -69,7 +69,7 @@ function Competences() {
                 </div>
               ))
             }
-            <Image src='/system_solar.png' alt="system_solar" width={900} height={900} className="w-full lg:w-auto h-auto" />
+            <Image src='/system_solar.webp' alt="system_solar" width={900} height={900} className="w-full lg:w-auto h-auto" />
           </div>
           <motion.img
             initial={{ x: -20, y: 0 }}
