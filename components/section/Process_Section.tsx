@@ -1,14 +1,12 @@
 "use client"
 import Image from "next/image";
 import Spline from '@splinetool/react-spline';
-import { CurvingLine } from "..";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ButtonGradient from "../ButtonGradient";
 import { contenuSection, buttons } from "../function/data/dataProcess";
 import { buttonVariants, containerVariants, divVariants, textVariants } from "../function/animation";
 import { useInView } from "react-intersection-observer";
-
 
 function Process() {
 
