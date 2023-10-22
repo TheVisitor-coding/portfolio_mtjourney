@@ -1,4 +1,4 @@
-"use client"
+"use static"
 
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";

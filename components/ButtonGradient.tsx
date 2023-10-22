@@ -1,4 +1,5 @@
-"use client";
+"use static"
+
 
 import { ButtonProps } from "./types";
 import { motion } from "framer-motion";

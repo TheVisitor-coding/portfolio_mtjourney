@@ -1,4 +1,4 @@
-import { Competences, Contact, Expertises, Process, TitleSection, Project, Transi_Process } from "@/components";
+import { Competences, Contact, Expertises, Process, Project, TitleSection, Transi_Process } from "@/components";
 import AccueilSection from "@/components/section/Accueil_Section";
 
 

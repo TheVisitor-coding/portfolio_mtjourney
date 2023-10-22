@@ -11,7 +11,6 @@ function CurvingLine() {
 
   useEffect(() => {
     if (svgRef.current) {
-      // Utilisez inView pour déterminer si la classe 'hidden' doit être ajoutée ou supprimée
       svgRef.current.classList.toggle('hidden', !inView);
     }
   }, [inView]);

@@ -1,4 +1,5 @@
 
+
 export const logo = [
   { img: '/logo langage/react_logo.png', alt: 'react_logo', width: 130, height: 130, className: 'absolute bottom-[23rem] left-[26rem]' },
   { img: '/logo langage/figma.png', alt: 'figma_logo', width: 110, height: 110, className: 'absolute top-1/2 left-1/4' },

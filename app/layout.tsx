@@ -1,5 +1,6 @@
 import { Navbar } from '@/components'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'Portfolio MT_Journey',
@@ -16,10 +17,13 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         {/* <link rel="preload" href="https://use.typekit.net/twl5efs.css" as='style' /> */}
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/favicon.ico" sizes='16x16' type='image/png' />
       </head>
       <body className={"overflow-auto overflow-x-hidden m-auto"}>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   )
