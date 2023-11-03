@@ -12,7 +12,7 @@ function Contact() {
   const [ref2, inView2] = useInView();
 
   return (
-    <section className="mt-64 mb-64 flex flex-col gap-[25rem] h-screen">
+    <section className="sm:mt-64 mt-36 sm:mb-64 flex flex-col gap-[25rem] h-screen">
       <motion.div
         ref={ref1}
         variants={textProcessVariants}
@@ -42,7 +42,7 @@ function Contact() {
 
         <Form />
         <div className="relative flex flex-col justify-center items-center mt-36 gap-36">
-          <h3 className="text-text-color font-kallisto font-bold text-5xl md:text-6xl">Me Retrouver</h3>
+          <h3 className="text-text-color font-kallisto font-bold text-4xl md:text-6xl">Me Retrouver</h3>
           <span className="flex flex-row flex-wrap gap-14 justify-center sm:gap-28">
             <motion.a
               target="_blank"

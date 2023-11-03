@@ -31,7 +31,7 @@ function Process() {
 
   return (
     <>
-      <section id="process" className="mt-64 mb-64">
+      <section id="process" className="sm:mt-64 mt-36 sm:mb-64">
 
         {/* Button Tiny Screen */}
         <div className="flex flex-row justify-center md:gap-16 gap-2 lg:hidden">

@@ -49,7 +49,7 @@ export const contenuSection = [
 ]
 
 export const buttons = [
-  { id: 1, isOpen: true, name: "Echange", icon: "/process/discuss.png", classBtn: "rounded-full w-14 h-14 border-1 flex justify-center items-center lg:translate-x-5 lg:translate-y-5", classDiv: "lg:top-1/3 lg:right-2/3 top-14 -right-14" },
+  { id: 1, isOpen: true, name: "Echange", icon: "/process/discuss.png", classBtn: "rounded-full w-14 h-14 border-1 flex justify-center items-center lg:translate-x-5 lg:translate-y-5", classDiv: "lg:top-1/3 lg:right-2/3 top-14 -right-18" },
   { id: 2, isOpen: false, name: "CDC", icon: "/process/task.png", classBtn: "rounded-full w-14 h-14 border-1 flex justify-center items-center lg:-translate-x-7 lg:translate-y-5", classDiv: "lg:top-1/3 lg:right-20 top-14 -right-14" },
   { id: 3, isOpen: false, name: "Design", icon: "/process/pen.png", classBtn: "rounded-full w-14 h-14 border-1 flex justify-center items-center lg:-translate-x-12 lg:translate-y-2", classDiv: "lg:top-2 lg:right-24 top-14 -right-14" },
   { id: 4, isOpen: false, name: "Développement", icon: "/process/code.png", classBtn: "rounded-full w-14 h-14 border-1 flex justify-center items-center lg:-translate-x-9 lg:translate-y-5", classDiv: "lg:top-1/3 lg:right-20 top-14 -right-14" },

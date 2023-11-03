@@ -13,7 +13,7 @@ function AccueilSection() {
   return (
     <>
       <motion.div
-        className="relative flex flex-col items-center gap-5 lg:gap-7 2xl:mt-52 mt-40 mb-64"
+        className="relative flex flex-col items-center gap-5 lg:gap-7 2xl:mt-52 sm:mt-40 mt-20 sm:mb-64"
         variants={containerVariants}
         initial="initial"
         animate="animate"

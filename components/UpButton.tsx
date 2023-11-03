@@ -27,12 +27,12 @@ function UpButton() {
           animate={controls}
           className="absolute md:flex hidden z-20 top-2 left-1 w-1 h-1 md:w-2 md:h-2 bg-text-color rounded-full"
         ></motion.span>
-        <motion.a
+        <motion.button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           whileHover={{ translateY: -2, transition: { duration: 0.5 } }}
           className="bg-white rounded-full p-2 md:p-3">
           <BsRocketFill size={20} color={"#1E1E1E"} />
-        </motion.a>
+        </motion.button>
       </motion.div>
     </>
   );

@@ -30,7 +30,7 @@ function Project() {
         initial="initial"
         animate={inView ? 'animate' : 'initial'}
         variants={containerVariants}
-        id='project' className="mt-64 mb-64 ">
+        id='project' className="sm:mt-64 mt-36 sm:mb-64 ">
         <div className="relative flex flex-col h-min gap-24">
           <h3 className="absolute -translate-x-[20rem] opacity-0 lg:opacity-30 mix-blend-overlay font-kallisto left-0 top-1/3 lg:text-10xl md:text-6xl text-4xl text-text-color font-bold rotate-90">
             PROJETS</h3>

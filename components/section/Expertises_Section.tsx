@@ -19,7 +19,7 @@ function Expertises() {
         initial="initial"
         animate={inView ? 'animate' : 'initial'}
         variants={containerVariants}
-        id="expertises" className="mt-64 mb-64">
+        id="expertises" className="sm:mt-64 mt-36 sm:mb-64">
         <div className="flex xl:flex-row flex-col xl:gap-0 gap-36 justify-around align-middle relative">
 
           <Image src="/circle_form1.svg" alt="circle shape" width={450} height={450} className="absolute xl:bottom-2/4 sm:bottom-2/3 bottom-2/4 xl:-left-10 sm:-left-16 -left-2/4" />
