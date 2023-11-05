@@ -19,5 +19,5 @@ export {
     Transi_Process,
     Process,
     Project,
-    Contact
+    Contact,
 }

@@ -13,6 +13,7 @@ function Competences() {
 
   return (
     <>
+
       <motion.section ref={ref}
         initial="initial"
         animate={inView ? 'animate' : 'initial'}
@@ -101,6 +102,7 @@ function Competences() {
           />
         </div>
       </motion.section>
+
     </>
   );
 }

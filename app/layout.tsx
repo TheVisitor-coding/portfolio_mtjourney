@@ -3,7 +3,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
-  title: 'Portfolio MT_Journey',
+  title: 'Matteo ROSSI - Developer',
   description: 'Freelance Web Developer',
   image: '/logo_mtjourney.png',
 }

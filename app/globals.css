@@ -78,3 +78,13 @@ body {
   background-position: right center;
   transform: translateY(-5px);
 }
+
+.gradient-menu {
+  background-image: linear-gradient(to right, var(--secondary-color) 0%, var(--primary-color) 51%, var(--secondary-color) 100%);
+  transition: ease-in-out 0.6s;
+  background-size: 200% auto;
+}
+
+.gradient-menu:hover {
+  background-position: right center;
+}

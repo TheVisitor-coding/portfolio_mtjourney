@@ -1,4 +1,4 @@
-import { FormEvent, useState, useEffect } from "react";
+import { FormEvent, useState } from "react";
 import ButtonGradient from "./ButtonGradient";
 import emailjs from 'emailjs-com';
 import Lottie from "lottie-react";
