@@ -113,3 +113,31 @@ export const titleVariants = {
     },
   },
 };
+
+export const linkVariants = {
+  whileHover: {
+    translateX: 50,
+    color: "#F9D399",
+    transition: {
+      type: "spring",
+      duration: 1,
+      stiffness: 100,
+      ease: "easeInOut",
+    },
+  }
+}
+
+export const menuVariants = {
+  open: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 1,
+    }
+  },
+  closed: {
+    x: "100%",
+    opacity: 0,
+  },
+};

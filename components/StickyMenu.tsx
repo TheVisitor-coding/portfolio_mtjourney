@@ -4,43 +4,16 @@ import system_solar from '../public/system_solar.json'
 import { motion } from "framer-motion";
 import { FaShare } from 'react-icons/fa'
 import { link } from './function/data/dataMenu'
+import { linkVariants, menuVariants } from "./function/animation";
 
 function StickyMenu() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const linkVariants = {
-    whileHover: {
-      translateX: 50,
-      color: "#F9D399",
-      transition: {
-        type: "spring",
-        duration: 1,
-        stiffness: 100,
-        ease: "easeInOut",
-      },
-    }
-  }
-
-  const menuVariants = {
-    open: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        duration: 1,
-      }
-    },
-    closed: {
-      x: "100%",
-      opacity: 0,
-    },
-  };
-
   return (
     <>
       <div
-        className="px-[0.15rem] py-[0.15rem] rounded-3xl -rotate-90 gradient-menu z-20 fixed right-0 top-1/4 translate-x-12">
+        className="px-[0.15rem] py-[0.15rem] hidden lg:block rounded-3xl -rotate-90 gradient-menu z-20 fixed right-0 top-1/4 translate-x-12">
         <button
           onClick={() => setIsMenuOpen(true)}
           className="px-6 py-2 h-full w-full rounded-3xl bg-bg-color text-text-color font-moby">
@@ -53,7 +26,7 @@ function StickyMenu() {
         initial="closed"
         animate={isMenuOpen ? "open" : "closed"}
         className={`w-screen h-screen pb-14 bg-bg-color top-0 fixed z-50 ${isMenuOpen ? 'flex flex-row justify-around items-center' : 'hidden'}`}>
-        <div className="flex flex-col gap-8 font-moby text-[3.125rem] text-text-color">
+        <div className="lg:flex hidden flex-col gap-8 font-moby text-5xl xl:text-[3.125rem] text-text-color">
 
           {
             link.map((item, index) => (
