@@ -76,7 +76,7 @@ body {
 
 .gradient-btn:hover {
   background-position: right center;
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 }
 
 .gradient-menu {

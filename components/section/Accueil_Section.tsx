@@ -42,7 +42,7 @@ function AccueilSection() {
           className="relative flex flex-col items-center"
           variants={buttonVariants}
         >
-          <ButtonGradient title="Discutons de votre Projet >>" className="text-lg py-3 md:px-16 px-8" handleClick={() => { window.location.href = '#contact' }} />
+          <ButtonGradient title="Discutons de votre Projet >>" className="text-lg py-3 px-8" handleClick={() => { window.location.href = '#contact' }} />
           <motion.div
             className="text-transparent font-regular mix-blend-overlay z-0 sm:flex hidden -rotate-[10deg] xl:text-10xl lg:text-9xl sm:text-7xl text-4xl lg:-translate-y-16 md:-translate-y-12 sm:-translate-y-5 font-moby font-outline-2"
             variants={textShadowVariants}

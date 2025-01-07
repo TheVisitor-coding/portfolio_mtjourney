@@ -43,7 +43,7 @@ function ButtonPlanet({ title, handleClick, className, velocite }: ButtonProps) 
       className={`relative z-10 ${className} border-1 border-text-color text-text-color font-kallisto tracking-widest cursor-pointer`}
       onMouseEnter={hoverHandler}
       onMouseLeave={unhoverHandler}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.9 }}
       transition={{ duration: 0.5 }}
       onClick={handleClick}

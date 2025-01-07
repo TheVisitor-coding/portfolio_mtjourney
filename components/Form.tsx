@@ -13,26 +13,30 @@ function Form() {
   const [message, setMessage] = useState('');
   const [isSent, setIsSent] = useState(false);
 
+  const publicKey: string | undefined = process.env.NEXT_PUBLIC_EMAILJS_API_PUBLIC
+  const templateKey: string | undefined = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_KEY
+  const serviceKey: string | undefined = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_KEY
+
   const sendEmail = async () => {
-    const templateParams = {
-      to_email: 'matteorossiroy.pro@gmail.com', // Remplacez par l'adresse e-mail du destinataire
-      name,
-      firstName,
-      mail,
-      message,
-    };
-
-    try {
-
-      await emailjs.send(
-        'service_mg8tpz9', // Remplacez par votre ID de service Email.js
-        'template_a3u5cb2', // Remplacez par votre ID de modèle Email.js
-        templateParams, // Les paramètres du modèle que vous avez définis
-        '-VY_9mInXAUWJVlA_' // Remplacez par votre ID d'utilisateur Email.js
-      );
-      console.log('E-mail envoyé avec succès');
-    } catch (error) {
-      console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
+    if (publicKey && templateKey && serviceKey) {
+      const templateParams = {
+        to_email: 'matteorossiroy.pro@gmail.com',
+        name,
+        firstName,
+        mail,
+        message,
+      };
+  
+      try {
+        await emailjs.send(
+          serviceKey,
+          templateKey,
+          templateParams,
+          publicKey
+        );
+      } catch (error) {
+        console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
+      }
     }
   };
 
@@ -40,10 +44,8 @@ function Form() {
     e.preventDefault();
 
     try {
-      // Envoyez l'e-mail lorsque le formulaire est soumis
       await sendEmail();
 
-      // Réinitialisez le formulaire après l'envoi réussi
       setName('');
       setFirstName('');
       setMail('');
@@ -58,7 +60,6 @@ function Form() {
   return (
 
     <form onSubmit={onSubmit} className="flex flex-col justify-center items-center gap-[4.75rem]">
-
       {
         isSent ?
           <>
@@ -75,7 +76,6 @@ function Form() {
               </motion.button>
             </div>
           </>
-
           :
           <>
             <div className="flex lg:flex-row flex-col min-w-full flex-wrap justify-center items-center lg:gap-32 gap-12">
@@ -89,8 +89,6 @@ function Form() {
             </span>
           </>
       }
-
-
     </form>
   );
 }
